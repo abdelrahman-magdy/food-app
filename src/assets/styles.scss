@@ -1,0 +1,82 @@
+//import fonts and normalize
+@import './scss/normalize.scss';
+@import './scss/icon.scss';
+/* global styles to this file, and also import other style files */
+$main-color:#74c0e2;
+$main-grey:#f0f3f6;
+$font-color:#525f6e;
+$dark-grey:#d8dde3;
+
+//fonts
+@font-face {
+    font-family: 'semibold';
+    src: url('./fonts/semibold.ttf');
+
+}
+
+@font-face {
+    font-family: 'regular';
+    src: url('./fonts/regular.ttf');
+
+}
+
+html {
+    color: $font-color;
+    font-family: 'regular';
+    font-size: 16px
+}
+
+main {
+    background-color: $main-grey;
+    min-height: 100vh;
+    padding: 30px;
+}
+
+hr {
+    border-color: $dark-grey;
+}
+
+//common classes and elements
+
+button {
+    outline: none;
+    cursor: pointer;
+}
+
+.half-circle-btn {
+    padding: 25px;
+    background-color: $main-color;
+    border: 0;
+
+}
+
+.txt-center {
+    text-align: center;
+}
+
+.left-radius {
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+
+.right-radius {
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
+@media only screen and (max-width: 600px) {
+    html {
+        font-size: 14px;
+    }
+
+    .half-circle-btn {
+        padding: 10px;
+        background-color: $main-color;
+        border: 0;
+
+    }
+
+    main {
+        padding: 15px
+    }
+}

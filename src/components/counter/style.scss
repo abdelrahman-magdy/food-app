@@ -1,0 +1,36 @@
+@import '../../assets/styles.scss';
+
+.counter-wrapper {
+    display: flex;
+    justify-content: center;
+    .counter-number {
+        height: 69px;
+        padding: 0;
+        display: inline-block;
+        text-align: center;
+        margin: 0 5px;
+        line-height: 69px;
+        border: 2px solid $main-grey;
+        font-size: 1.5rem;
+        vertical-align: top;
+        max-width: 70px;
+        pointer-events: none;
+    }
+
+    input[type=number]::-webkit-inner-spin-button,
+    input[type=number]::-webkit-outer-spin-button {
+        -webkit-appearance: none !important;
+        margin: 0 !important;
+        -moz-appearance: textfield !important;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .counter-wrapper {
+        .counter-number {
+            height: 40px;
+            width: 40px;
+            line-height: 40px
+        }
+    }
+}
